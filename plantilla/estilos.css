@@ -1,0 +1,35 @@
+*{font-family: sans-serif}
+
+/*
+-----------------------------------
+Estilos de la plantilla por defecto
+-----------------------------------
+*/
+
+#main-header{
+   /*position: fixed;*/
+}
+
+#main-footer{
+   /* position: fixed;*/
+}
+
+
+/*
+-----------------------------------
+Estilos para los ejercicios
+-----------------------------------
+*/
+
+h1 { color: purple; }
+h1 { color: grey; }
+#caja .cabecera h1 {
+	color: red;
+}
+#caja header h1 {
+	color: blue;
+}
+header  h1 {
+	color: lime;
+}
+

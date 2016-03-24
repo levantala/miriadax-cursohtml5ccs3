@@ -1,0 +1,17 @@
+/*
+-----------------------------------
+Estilos de la plantilla por defecto
+-----------------------------------
+*/
+
+#main-header{
+   /*position: fixed;*/
+}
+
+#main-footer{
+   /* position: fixed;*/
+}
+
+.embed-responsive{
+    height: 50px;
+}
