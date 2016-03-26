@@ -1,0 +1,21 @@
+
+
+header{
+text-align: center;
+
+}
+
+
+@font-face {
+    font-family: 'fira';
+    src: url('FiraSans-Two.woff') format('woff');
+}
+
+.tipo1{
+    font-family: 'fira', sans-serif;
+}
+
+.tipo2{
+    font-family: 'Roboto', sans-serif;
+}
+

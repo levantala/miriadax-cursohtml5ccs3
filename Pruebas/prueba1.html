@@ -1,16 +1,86 @@
-h<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PRIMEROS PASOS CON BRACKETS</title>
         <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
-        <style type="text/css"> </style>
+        <title>PRIMEROS PASOS CON BRACKETS</title>
+        <style type="text/css">
+            .caja{
+                background-color: #f00 ;
+                  padding: 100px;
+            }
+            .caja .left{
+                width: 20%;
+                background-color: #ff9;
+                float: left;
+            }
+            .caja .center{
+                width: 60%;
+                background-color: #cfc;
+                float: center;
+            }
+            .caja .right{
+                width: 20%;
+                background-color: #ccf;
+                float: right;
+            }
+            .caja .lefta{
+                height:50px;
+                width: 50px;
+                background-color: #ff9;
+                position: absolute;
+                left: 50px;
+                top: 40px;
+            }
+            .caja .centera{
+                height:50px;
+                width: 50px;
+                background-color: #cfc;
+                position: absolute;
+                left: 150px;
+                top: 40px;
+            }
+            .caja .righta{
+                height:50px;
+                width: 50px;
+                background-color: #ccf;
+                position: absolute;
+                left: 250px;
+                top: 40px;
+            }
+            .caja .leftf{
+                height:50px;
+                width: 50px;
+                background-color: #ff9;
+                position: fixed;
+                left: 50px;
+                top: 140px;
+            }
+            .caja .centerf{
+                height:50px;
+                width: 50px;
+                background-color: #cfc;
+                position: fixed;
+                left: 150px;
+                top: 140px;
+            }
+            .caja .rightf{
+                height:50px;
+                width: 50px;
+                background-color: #ccf;
+                position: fixed;
+                left: 250px;
+                top: 140px;
+            }
+        </style>
     </head>
     <body>
-
         <h1>prueba1</h1>
-
+        <div class="caja">
+            <div class="leftf"><p>caja-left</p></div>
+            <div class="centerf"><p>caja-center</p></div>
+            <div class="rightf"><p>caja-right</p></div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "description" content = "MiriadaX: Desarrollo en HTML5, CSS...">
+        <meta name= "author" content = "Miguel A. Castillo">
+        <title>Miriadax - Módulo 2 - Tercera Entrega: Opcional</title>
+        <link rel="stylesheet" type="text/css" href="estilos-ejercicio.css" >
+    </head>
+
+    <body>
+
+        <header><div class="caja"><h1>Fuentes Vinculadas</h1></div></header>
+
+
+        <section><h2>&nbsp;</h2>
+            <article>
+                <header>
+                    <div class="caja"><h2>Ejemplo imágenes resposive y etiqueta &lt;picture&gt;</h2></div>
+                </header>
+
+                <picture>
+                    <source media = "(min-width: 800px)" srcset="foto1-640.jpg">
+                    <source media = "(min-width: 600px)" srcset="foto1-320.jpg">
+                    <source media = "(min-width: 300px)" srcset="foto1-160.jpg">
+                    <img src="foto1-640.jpg" alt="foto1">
+                </picture>
+            </article>
+            <br>
+            <article>
+                <header>
+                    <div class="caja"><h2>Ejemplo con video de Youtube</h2></div>
+                </header>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/_tpPRm92MLA"  frameborder="0" width="560" height="315"> </iframe>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <div class="caja"><h2>Archivos de imagen vectorial SVG</h2></div>
+                </header>
+                <h3>La imagen vectorial se ha establecido como fondo de la pantalla</h3>
+            </article>
+        </section>
+
+    </body>
+</html>
