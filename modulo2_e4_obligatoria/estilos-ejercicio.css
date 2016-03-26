@@ -1,0 +1,97 @@
+
+body{
+    background-attachment: fixed;
+    /* background-image: url(fondo-pagina.jpg); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body > section{
+            font-family: 'Roboto', sans-serif;
+            color:brown;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            background-position: center center;
+            background: radial-gradient(ellipse, yellow, white);
+
+        }
+
+.caja1 {
+color: #ffffff;
+font-size: 10px;
+font-weight: 400;
+text-align: center;
+background: #889ccf;
+margin: 0 0 15px;
+overflow: hidden;
+padding: 10px;
+border-radius: 35px 0px 35px 0px;
+-moz-border-radius: 35px 0px 35px 0px;
+-webkit-border-radius: 35px 0px 35px 0px;
+border: 2px solid #5878ca;
+}
+
+.googleroboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    color:blueviolet;
+    text-align: center;
+}
+
+
+/* In this selector we specify  the width, height, borders, position, background color, color and shadow's dimensions */
+.caja2{
+ width: 300px;
+ margin: 40px;
+ min-height: 200px;
+ position:relative;
+ display: inline-block;
+ background: -webkit-gradient(linear, 0% 20%, 0% 1000%, from(#fff), to(#fff), color-stop(.1,#f3f3f3));
+ border: 1px solid #ccc;
+ -webkit-box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1) inset;
+ -webkit-border-bottom-right-radius: 6px 50px;
+ }
+
+#marco{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid black;
+}
+#contenedor{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: -webkit-flex;
+    display:flex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap: wrap;
+}
+
+/* Podemos eliminar este estilo si no queremos que se adapte al ancho máximo */
+.delimitador{
+    width:560px;    /* Ancho máximo */
+    margin:auto;    /* Centramos el vídeo */
+}
+/* El contenedor con el padding-top crea el tamaño del vídeo */
+.contenedor{
+    height:0px;
+    width:100%;
+    padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+    position:relative;
+}
+/* El iframe se adapta al tamaño del contenedor */
+.contenedor iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+
+
