@@ -2,20 +2,27 @@
 <head>
   <title>Date</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="estilos-ejercicio.css">
 </head>
 <body>
   <h1 id="h1"></h1>
-  <p>Entrega realizada por <strong>Miguel A. Castillo</strong> </p>
+  <p id="alumno">Entrega realizada por <strong>Miguel A. Castillo</strong> </p>
   <h2 id="h2">La fecha y la hora son:</h2>
   <div id="fecha"></div>
 
 <div>
     <ol type="a">
-      <li>Contenido de innerHTML de elemento identificado por id="h2.................:<span id="opcion_a"></span></li>
-      <li>Contenido de outerHTML de elemento identificado por id="h1.................:<span id="opcion_b"></span></li>
-      <li>Contenido de de la propiedad global: location.href.........................:<span id="opcion_c"></span></li>
-      <li>Contenido de de la propiedad global: location..............................:<span id="opcion_d"></span></li>
-      <li>Contenido de de las propiedades globales: screen.width y screen.heigth.....:<span id="opcion_e"></span></li>
+      <li>Contenido de innerHTML de elemento identificado por id="h2".</li>
+      <br><span id="opcion_a"></span><br><br>
+      <li>Contenido de outerHTML de elemento identificado por id="h1".</li>
+      <br><span id="opcion_b"></span><br><br>
+      <li>Contenido de de la propiedad global: location.href.</li>
+      <br><span id="opcion_c"></span><br><br>
+      <li>Contenido de de la propiedad global: location.</li>
+      <br><span id="opcion_d"></span><br><br>
+      <li>Contenido de de las propiedades globales: screen.width y screen.heigth.</li>
+      <br><span id="opcion_e1"></span><span>&nbsp;(screen.width)</span><br>
+      <br><span id="opcion_e2"></span><span>&nbsp;(screen.height)</span>
     </ol>
 </div>
 
@@ -30,6 +37,16 @@
 
   document.getElementById("h1").innerHTML    = msj;
   document.getElementById("fecha").innerHTML = fecha;
+
+
+  document.getElementById("opcion_a").innerHTML = document.getElementById("h2").innerHTML;
+  document.getElementById("opcion_b").innerHTML = document.getElementById("h1").innerHTML;
+  document.getElementById("opcion_c").innerHTML = document.location.href;
+  document.getElementById("opcion_d").innerHTML = document.location;
+  document.getElementById("opcion_e1").innerHTML = screen.width;
+  document.getElementById("opcion_e2").innerHTML = screen.height;
+
+
 </script>
 </body>
 </html>
