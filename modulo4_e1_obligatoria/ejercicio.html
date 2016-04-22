@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo</title>
+<meta charset="utf-8">
+
+<script type="text/javascript">
+  var num, acc = 0, op = "";
+  var num1, num2, resultado;
+
+  function mas()   { acc = num.value;  op = "+"; }
+  function menos() { acc = num.value;  op = "-"; }
+  function cuadrado(){op = "cuadrado"; calcular(); }
+  function inverso(){op = "inverso"; calcular(); }
+  function raiz(){op ="raiz"; calcular(); }
+  function entero(){op ="entero"; calcular(); }
+
+  function calcular() {
+    if (op === "+") {num.value = (+acc + +num.value);}
+    if (op === "-") {num.value = (+acc - +num.value);}
+    if (op === "cuadrado") {num.value = (num.value*num.value);}
+    if (op === "inverso") {num.value = (1/num.value);}
+    if (op === "raiz") {num.value = (Math.sqrt(num.value));}
+    if (op === "entero") {
+      if (num.value > 0) {
+        num.value = Math.floor(num.value);
+      }
+      else{
+        num.value = Math.ceil(num.value);
+      }
+  }
+  }
+
+  function calcular2(operacion){
+
+
+    switch(operacion){
+
+      case "sumar":
+          resultado.value = +num1.value + +num2.value
+          break
+      case "restar":
+          resultado.value = +num1.value - +num2.value
+          break
+      case "multiplicar":
+          resultado.value = num1.value * num2.value
+          break
+      case "dividir":
+          resultado.value = num1.value / num2.value
+          break
+      case "elevar":
+          resultado.value = Math.pow(num1.value, num2.value)
+          break
+    };
+
+  }
+
+  function inic ()   {
+      num = document.getElementById("num");
+      num1 = document.getElementById("num1");
+      num2 = document.getElementById("num2");
+      resultado = document.getElementById("resultado");
+
+  }
+  function vaciar () {num.value = "";num1.value="";num2.value="";resultado.value="";}
+
+</script>
+</head>
+
+
+<body onLoad="inic()">
+
+  <h1>Buenos días, bienvenido a la calculadora de Miguel Castillo</h1>
+  <h3> Operaciones Unitarias</h3>
+
+  Número:<p>
+  <input type="text" size="12" id="num" onClick="vaciar()"><p>
+  <button onClick="mas()">+</button>
+  <button onClick="menos()">-</button>
+  <button onClick="cuadrado()">x<sup>2</sup></button>
+  <button onClick="inverso()">1/x</button>
+  <button onClick="raiz()">&#8730;</button>
+  <button onClick="entero()">Ent</button>
+  <button onClick="calcular()">=</button>
+
+  <p>
+  <h3> Operaciones Binarias (2 operandos)</h3>
+  Número 1: &nbsp;<input type="text" size="12" id="num1" onClick="vaciar()"><p>
+  Número 2: &nbsp;<input type="text" size="12" id="num2"><p>
+  Resultado: &nbsp;<input type="text" size="12" id="resultado"><p>
+  <button onClick="calcular2('sumar')">+</button>
+  <button onClick="calcular2('restar')">-</button>
+  <button onClick="calcular2('multiplicar')">*</button>
+  <button onClick="calcular2('dividir')">/</button>
+  <button onClick="calcular2('elevar')">x<sup>y</sup></button>
+  </p>
+
+
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+[
+    {
+        "poliza": 0,
+        "nombre": "Israel Parra",
+        "profesion": "Programador Web"
+
+    },
+    {
+        "poliza": 1,
+        "nombre": "Pepe",
+        "profesion": "Diseñador Web"
+
+    },
+    {
+        "poliza": 2,
+        "nombre": "Juan",
+        "profesion": "Multimedia"
+
+    }
+]

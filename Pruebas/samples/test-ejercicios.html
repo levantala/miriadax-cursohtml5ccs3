@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang ="es">
+<head>
+<meta charset="utf-8">
+<title>test ejercicios</title>
+<script>
+
+function inicializar(){
+
+   resultado1 = document.getElementById("resultado1");
+   resultado2 = document.getElementById("resultado2");
+   resultado3 = document.getElementById("resultado3");
+   resultado4 = document.getElementById("resultado4");
+
+}
+
+
+
+function ejecutar(opcion){
+
+
+if (opcion == "1"){ resultado1.value = f_2(7); }
+if (opcion == "2"){ resultado1.value = f_1(2.2); }
+if (opcion == "3"){ resultado1.value = f_2(4); }
+if (opcion == "4"){ resultado1.value = f_2(6.4); }
+
+if (opcion == "5"){
+
+    var x = cero;
+    var y = uno;
+
+    var z = cero();
+    var t = uno();
+
+
+   /* resultado1.value =x()();*/
+    resultado2.value =x();
+    resultado3.value =y();
+    resultado4.value =x;
+
+
+}
+
+
+}
+
+
+function cero () { return 0; }
+function uno () { return 1; }
+
+
+
+
+
+
+function f_1 (x) {
+    x = Math.floor(x);
+    for (var res = 1; 0 < x; x-- ) {
+          res = res * 2;
+    }
+    return res;
+}
+
+function f_2 (x) {
+    x = Math.floor(x);
+    var i = 2;
+    while ( i < x ) {
+        if ((x % i) === 0) { return false; };
+        i = i + 1;
+    }
+    return true;
+}
+
+
+</script>
+
+
+
+</head>
+
+<body onLoad="inicializar()">
+
+Resultado 1: &nbsp;<input type="text" size="12" id="resultado1"><p>
+Resultado 2: &nbsp;<input type="text" size="12" id="resultado2"><p>
+Resultado 3: &nbsp;<input type="text" size="12" id="resultado3"><p>
+Resultado 4: &nbsp;<input type="text" size="12" id="resultado4"><p>
+<br>
+<button onClick="ejecutar(5)">Mostrar Resultados</button>
+</body>
+
+</html>
