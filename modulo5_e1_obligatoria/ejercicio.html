@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tema 5 Entrega Obligatoria</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js" ></script>
+        <script type="text/javascript">
+
+            $(function() {
+
+
+
+
+                /*
+
+                $("#n1").on("click",
+                            function(){ $("#n1").val("");}
+                           );
+
+                $("#b1").on("click",
+                            function() {
+                    var num = $("#n1");
+                    num.val(num.val() * num.val());
+                }
+                           );
+
+
+                 $("#un1").on("click",function(){$("#un1").val("");});
+
+
+                */
+
+
+           //Se inicializan todos los campos de resultado
+            $("#un1").on("click",function(){$("#un1").val("");});
+            $("#bn1").on("click",function(){$("#bn1").val("");});
+            $("#bn2").on("click",function(){$("#bn2").val("");});
+            $("#bnr").on("click",function(){$("#bnr").val("");});
+            $("#cn1").on("click",function(){$("#cn1").val("");});
+            $("#cnr").on("click",function(){$("#cnr").val("");});
+
+
+            // Operaciones unitarias
+
+            // Elevar al cuadrado
+               $("#uc1").on("click",
+                             function() {
+                                var num = $("#un1");
+                                num.val( num.val()*num.val());
+                            });
+
+            // Inverso
+               $("#uc1").on("click",
+                             function() {
+                                var num = $("#un1");
+                                num.val( num.val()*num.val());
+                            });
+
+            // Elevar al cuadrado
+               $("#uc1").on("click",
+                             function() {
+                                var num = $("#un1");
+                                num.val( num.val()*num.val());
+                            });
+
+           // Elevar al cuadrado
+               $("#uc1").on("click",
+                             function() {
+                                var num = $("#un1");
+                                num.val( num.val()*num.val());
+                            });
+
+           // Elevar al cuadrado
+               $("#uc1").on("click",
+                             function() {
+                                var num = $("#un1");
+                                num.val( num.val()*num.val());
+                            });
+
+           // Elevar al cuadrado
+               $("#uc1").on("click",
+                             function() {
+                                var num = $("#un1");
+                                num.val( num.val()*num.val());
+                            });
+
+
+            });
+
+        </script>
+    </head>
+
+
+    <body>
+
+
+        Número:
+        <input type="text" id="n1">
+        <button id="b1">x<sup>2</sup></button>
+
+
+<h1>Buenos días, bienvenido a la calculadora de Miguel Castillo</h1>
+<h3> Operaciones Unitarias</h3>
+Número:<p>
+<input type="text" size="12" id="un1"><p>
+<button id="uc1">x<sup>2</sup></button>
+<button id="uc2">1/x</button>
+<button id="uc3">&#8730;</button>
+<button id="uc4">Ent</button>
+<button id="uc5">2<sup>n</sup></button>
+<button id="uc6">!</button>
+
+
+<p>
+<h3> Operaciones Binarias (2 operandos)</h3>
+Número 1: &nbsp;<input type="text" size="12" id="bn1"><p>
+Número 2: &nbsp;<input type="text" size="12" id="bn2"><p>
+Resultado: &nbsp;<input type="text" size="12" id="bnr"><p>
+<button id="bc1">+</button>
+<button id="bc2">-</button>
+<button id="bc3">*</button>
+<button id="bc4">/</button>
+<button id="bc5">x<sup>y</sup></button>
+</p>
+
+<p>
+<h3> Operaciones n Operandos</h3>
+Número: &nbsp;<input type="text" size="12" id="cn1"><p>
+Resultado: &nbsp;<input type="text" size="12" id="cnr"><p>
+<button id="cc1">n+n+...+n</button>
+<button id="cc2">n*n*n*n*n*n</button>
+</p>
+
+
+
+
+    </body>
+</html>
+
