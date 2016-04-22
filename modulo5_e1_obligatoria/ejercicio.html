@@ -50,39 +50,135 @@
                             });
 
             // Inverso
-               $("#uc1").on("click",
+               $("#uc2").on("click",
                              function() {
                                 var num = $("#un1");
-                                num.val( num.val()*num.val());
+                                num.val( 1/num.val() );
+
                             });
 
-            // Elevar al cuadrado
-               $("#uc1").on("click",
+            // Raíz cuadrada
+               $("#uc3").on("click",
                              function() {
                                 var num = $("#un1");
-                                num.val( num.val()*num.val());
+                                num.val( Math.sqrt(num.val()) );
                             });
 
-           // Elevar al cuadrado
-               $("#uc1").on("click",
+           // Entero
+               $("#uc4").on("click",
                              function() {
                                 var num = $("#un1");
-                                num.val( num.val()*num.val());
+                                if (num.val() > 0) {
+                                    num.val( Math.floor(num.val()) );
+                                  }
+                                  else{
+                                    num.val( Math.ceil(num.val()) );
+                                  }
+
+
                             });
 
-           // Elevar al cuadrado
-               $("#uc1").on("click",
+           // Elevar a la potencia n
+               $("#uc5").on("click",
                              function() {
                                 var num = $("#un1");
-                                num.val( num.val()*num.val());
+                               num.val( Math.pow(2, num.val()) );
                             });
 
-           // Elevar al cuadrado
-               $("#uc1").on("click",
+           // Factorial
+               $("#uc6").on("click",
                              function() {
                                 var num = $("#un1");
-                                num.val( num.val()*num.val());
+                                var factorial = 1;
+                                for (var i=1; i <= num.val(); i++){
+                                factorial = factorial * i;
+                                 }
+                                num.val( factorial );
                             });
+
+
+                 // Operaciones binarias
+
+                 // suma
+                 $("#bc1").on("click",
+                             function() {
+                                var num1 = $("#bn1");
+                                var num2 = $("#bn2");
+                                var numr = $("#bnr");
+                                numr.val( +num1.val() + +num2.val() );
+                            });
+                // resta
+                 $("#bc2").on("click",
+                             function() {
+                                var num1 = $("#bn1");
+                                var num2 = $("#bn2");
+                                var numr = $("#bnr");
+                                numr.val( +num1.val() - +num2.val() );
+                            });
+
+                // multiplicación
+                 $("#bc3").on("click",
+                             function() {
+                                var num1 = $("#bn1");
+                                var num2 = $("#bn2");
+                                var numr = $("#bnr");
+                                numr.val( +num1.val() * +num2.val() );
+                            });
+
+                // división
+                 $("#bc4").on("click",
+                             function() {
+                                var num1 = $("#bn1");
+                                var num2 = $("#bn2");
+                                var numr = $("#bnr");
+                                numr.val( +num1.val() / +num2.val() );
+                            });
+
+                // elevar a la potencia
+                 $("#bc5").on("click",
+                             function() {
+                                var num1 = $("#bn1");
+                                var num2 = $("#bn2");
+                                var numr = $("#bnr");
+                                numr.val( Math.pow(num1.val(),num2.val() ));
+                            });
+
+
+                // Operaciones con n Operandos
+
+                 // suma
+                 $("#cc1").on("click",
+                             function() {
+                                var num1 = $("#cn1");
+                                var numr = $("#cnr");
+
+                                var lista = num1.val().split(",");
+
+                                for (var i=0, acc=0; i<lista.length; i++){
+                                   acc += +lista[i];
+                                    }
+                                numr.val(acc);
+
+                            });
+
+                // multiplicación
+                 $("#cc2").on("click",
+                             function() {
+                                var num1 = $("#cn1");
+                                var numr = $("#cnr");
+
+                                var lista = num1.val().split(",");
+
+                                for (var i=0, acc=1; i<lista.length; i++){
+                                   acc = acc * +lista[i];
+                                    }
+                                numr.val(acc);
+
+                            });
+
+
+
+
 
 
             });
@@ -125,6 +221,7 @@ Resultado: &nbsp;<input type="text" size="12" id="bnr"><p>
 
 <p>
 <h3> Operaciones n Operandos</h3>
+(Separar cada numero con ",")<br><br>
 Número: &nbsp;<input type="text" size="12" id="cn1"><p>
 Resultado: &nbsp;<input type="text" size="12" id="cnr"><p>
 <button id="cc1">n+n+...+n</button>
