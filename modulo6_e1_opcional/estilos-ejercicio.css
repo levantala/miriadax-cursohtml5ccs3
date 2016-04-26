@@ -1,0 +1,17 @@
+
+
+* {
+    font-family: verdana, sans-serif;
+}
+
+#alumno, span{
+    color : red;
+}
+
+li {
+    color: blue;
+}
+
+nav.navbar {
+    background-color: red;
+}
